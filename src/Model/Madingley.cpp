@@ -239,29 +239,29 @@ void Madingley::Output( unsigned step ) {
                             cohortAbundanceThisCell += c.mCohortAbundance;
 
                     if( mCohortNutritionSource[ c.mFunctionalGroupIndex ] == "herbivore" ) {
-                        herbivoreBiomassThisCell += c.mIndividualBodyMass;
+                        herbivoreBiomassThisCell += cohortBiomass;
                                 herbivoreAbundanceThisCell += c.mCohortAbundance;
                     } else if( mCohortNutritionSource[ c.mFunctionalGroupIndex ] == "omnivore" ) {
-                        omnivoreBiomassThisCell += c.mIndividualBodyMass;
+                        omnivoreBiomassThisCell += cohortBiomass;
                                 omnivoreAbundanceThisCell += c.mCohortAbundance;
                     } else if( mCohortNutritionSource[ c.mFunctionalGroupIndex ] == "carnivore" ) {
-                        carnivoreBiomassThisCell += c.mIndividualBodyMass;
+                        carnivoreBiomassThisCell += cohortBiomass;
                                 carnivoreAbundanceThisCell += c.mCohortAbundance;
                     }
 
                     if( mCohortThermoregulation[ c.mFunctionalGroupIndex ] == "ectotherm" ) {
-                        ectothermBiomassThisCell += c.mIndividualBodyMass;
+                        ectothermBiomassThisCell += cohortBiomass;
                                 ectothermAbundanceThisCell += c.mCohortAbundance;
                     } else if( mCohortThermoregulation[ c.mFunctionalGroupIndex ] == "endotherm" ) {
-                        endothermBiomassThisCell += c.mIndividualBodyMass;
+                        endothermBiomassThisCell += cohortBiomass;
                                 endothermAbundanceThisCell += c.mCohortAbundance;
                     }
 
                     if( mCohortReproductiveStrategy[ c.mFunctionalGroupIndex ] == "iteroparity" ) {
-                        iteroparousBiomassThisCell += c.mIndividualBodyMass;
+                        iteroparousBiomassThisCell += cohortBiomass;
                                 iteroparousAbundanceThisCell += c.mCohortAbundance;
                     } else if( mCohortReproductiveStrategy[ c.mFunctionalGroupIndex ] == "semelparity" ) {
-                        semelparousBiomassThisCell += c.mIndividualBodyMass;
+                        semelparousBiomassThisCell += cohortBiomass;
                                 semelparousAbundanceThisCell += c.mCohortAbundance;
                     }
                 } );
