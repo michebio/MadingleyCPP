@@ -249,10 +249,10 @@ void Madingley::Output( unsigned step ) {
                                 carnivoreAbundanceThisCell += c.mCohortAbundance;
                     }
 
-                    if( mCohortThermoregulation[ c.mFunctionalGroupIndex ] == "endotherm" ) {
+                    if( mCohortThermoregulation[ c.mFunctionalGroupIndex ] == "ectotherm" ) {
                         ectothermBiomassThisCell += c.mIndividualBodyMass;
                                 ectothermAbundanceThisCell += c.mCohortAbundance;
-                    } else if( mCohortThermoregulation[ c.mFunctionalGroupIndex ] == "ectotherm" ) {
+                    } else if( mCohortThermoregulation[ c.mFunctionalGroupIndex ] == "endotherm" ) {
                         endothermBiomassThisCell += c.mIndividualBodyMass;
                                 endothermAbundanceThisCell += c.mCohortAbundance;
                     }
